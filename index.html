@@ -9,20 +9,24 @@
        <link rel="icon" href="html5.png" type="image/x.icon">
     </head>
     <body>
+
+      <header>
        <h1>Goals for the Year</h1>
 
-       <hr>
-
-       <nav>
+       <nav aria-label="Primary Navigation">
          <ul>
             <li><a href="#html">Learning HTML</a></li>
             <li><a href="#vacation">My Vacation</a></li>
          </ul>
        </nav>
 
+       </header>
+
        <hr>
 
-       <section id="html">
+       <main>
+
+       <article id="html">
 
        <h2>I'm Ready to Learn HTML!</h2>
        <p>This is my first web page!</p>
@@ -39,18 +43,22 @@
         <p>I've been working hard and really need a getaway!</p>
         <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit the beach</p>
 
-        </section>
+       </article>
 
         <hr>
 
-        <section id="vacation">
+        <article id="vacation">
 
         <h3>Places I Would Like to Visit</h3>
         <ul>
         <li><p>I've heard good things about these places:</p></li>
-        <img src="img/caribbean.jpg" alt="Carribbean Beach" title = "Carribbean Beach" width = "400" height = "225">
+        <figure>
+        <img src="img/caribbean.jpg" alt="Carribbean Beach" title = "Carribbean Beach" width = "400" height = "225" loading="lazy">
+        <figcaption>Carribbean Beach Getaway</figcaption>
+        </figure>
             <li>White Sands Resort & Conference Centre in Dar es Salaam, Tanzania</li>
             <li>The White Sands Resort and Spa in Point Pleasant Beach, NJ</li>
+         
         </ul>
 
 
@@ -66,12 +74,17 @@
            <dd>These are also <strong>cold</strong></dd>
         </dl>
 
-        </section>
+      </article>
+
+      </main>
 
        <hr>
-       &lt;&lt;&lt;&copy; <a href="about.html">Kirabo</a> &gt;&gt;&gt;
+
+       <footer>
+       <p>&lt;&lt;&lt;&copy; <a href="about.html">Kirabo</a> &gt;&gt;&gt;</p>
 
        <p><a href="#">Back to Top</a></p>
+       </footer>
 
     </body>
 </html>
