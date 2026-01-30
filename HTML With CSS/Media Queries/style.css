@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 1.5rem;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.135);
+    background-image: radial-gradient(whitesmoke, rgba(0, 0, 0, 0.135));
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer{
+    position: sticky;
+    background-color: rgb(13, 2, 26);
+    color: whitesmoke;
+}
+
+nav{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
+header{
+    top: 0;
+
+}
+
+footer{
+    bottom: 0;
+}
+
+main{
+    flex-grow: 1;
+}
+
+/*Small*/
+
+@media screen and (min-width: 576px){
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+    nav{
+        display: none;
+    }
+}
+
+/* Medium */
+
+@media screen and (min-width: 768px){
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+    nav{
+        display: none;
+    }
+}
+
+/*Large*/
+@media screen and (min-width: 992px){
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+    nav{
+        display: none;
+    }
+}
+
+/*Extra Large*/
+
+@media screen and (min-width: 1024px){
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+    nav{
+        display: none;
+    }
+}
+
+/*Mobile Device Landwidth*/
+
+@media screen and (min-height: 425px) and (min-aspect-ratio: 7/4){
+    body{
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+    nav{
+        display: none;
+    }
+
+    h1, h2{
+        font-size: 1.5rem;
+    }
+}
+
